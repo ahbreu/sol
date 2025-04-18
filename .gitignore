@@ -1,0 +1,15 @@
+# Arquivos pesados e de build
+*.gguf
+*.exe
+*.log
+*.zip
+*.ods
+
+# Python/Streamlit/VSC cache
+__pycache__/
+*.pyc
+.streamlit/
+.vscode/
+
+# Modelos e binários
+modelo/

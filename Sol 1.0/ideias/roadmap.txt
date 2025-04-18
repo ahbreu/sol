@@ -1,0 +1,18 @@
+FUTURAS IMPLEMENTAÇÕES:
+- Text-to-Speech (voz para a Sol)
+- Speech-to-Text (Sol te ouvir)
+- Interface visual simples (desktop ou web)
+- Integração com celular (via app ou web)
+- Integração com óculos inteligentes DIY
+
+[PRIORIDADE ALTA]
+- Criar script que exporta logs de conversa automaticamente
+- Adicionar ícone da Sol na área de trabalho
+- Testar integração com microfone local via Python + Vosk
+- Ver como rodar a Sol em um app React ou Electron
+
+[COISAS DOIDAS PRA TENTAR]
+- Fazer a Sol responder por voz com voz sexy tipo GLaDOS brasileira
+- Enviar respostas da Sol pro celular via Telegram
+- Rodar a Sol num Raspberry Pi escondido numa caixinha de som
+- Usar óculos com ESP32 que se conectam à Sol pelo Wi-Fi

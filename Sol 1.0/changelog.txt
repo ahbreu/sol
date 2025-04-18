@@ -1,0 +1,6 @@
+# Changelog – Projeto SOL
+
+## v0.1 – Primeira estrutura criada
+- Inicialização do projeto
+- Criação da pasta SOL com arquivos base
+- Primeiro prompt personalizado da Sol
