@@ -1,15 +1,68 @@
-# Arquivos pesados e de build
-*.gguf
-*.exe
-*.log
-*.zip
-*.ods
+# Ambiente virtual
+venv/
+.env
+.venv/
 
-# Python/Streamlit/VSC cache
+# Arquivos temporários do VSCode e do Python
 __pycache__/
-*.pyc
-.streamlit/
+*.py[cod]
+*.so
+*.dll
+*.exe
+*.bak
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Cache do Jupyter e arquivos de checkpoint
+.ipynb_checkpoints/
+
+# Configurações locais do VSCode
 .vscode/
 
-# Modelos e binários
-modelo/
+# Dados sensíveis (exemplo futuro: senhas ou tokens)
+*.secret
+*.key
+*.pem
+
+# Backups automáticos e temporários
+*.tmp
+*.temp
+*.old
+*.swp
+*.swo
+
+# Arquivos de build/compilação
+build/
+dist/
+*.egg-info/
+
+# Modelos grandes ou pesados (como .gguf)
+*.gguf
+*.bin
+*.pt
+*.ckpt
+
+# Arquivos exportados (planilhas, imagens temporárias etc)
+*.ods
+*.xlsx
+*.csv
+*.pdf
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.tiff
+
+# Logs e dumps automáticos
+*.log
+*.out
+*.err
+
+# Streamlit
+.streamlit/
