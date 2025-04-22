@@ -1,0 +1,8 @@
+{
+    "caminho_modelo": "modelo/modelo.gguf",
+    "temperatura": 0.7,
+    "top_k": 40,
+    "max_tokens": 256,
+    "contexto_padrao": "memoria/contexto.md"
+  }
+  

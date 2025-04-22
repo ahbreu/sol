@@ -1,9 +1,14 @@
 import argparse
+from core.config_loader import carregar_config
 from core.carregar_modelo import carregar_modelo
 from core.processar_input import processar_input
 from core.gerar_resposta import gerar_resposta
 from core.logger import salvar_conversa
 from core.gerar_prompt import montar_prompt
+from core.validador import entrada_valida
+
+config = carregar_config()
+CAMINHO_MODELO = config.get("caminho_modelo", "modelo/modelo.gguf")
 
 # Argumentos de execução
 parser = argparse.ArgumentParser(description="Executa a IA Sol localmente.")
@@ -13,8 +18,8 @@ parser.add_argument("--offline", action="store_true", help="Executa em modo offl
 args = parser.parse_args()
 
 # Caminhos
-CAMINHO_MODELO = "modelo/modelo.gguf"
-CAMINHO_CONTEXTO = "memoria/contexto.md"
+CAMINHO_MODELO = config.get("caminho_modelo", "modelo/modelo.gguf")
+CAMINHO_CONTEXTO = config.get("caminho_contexto", "memoria/contexto.md")
 
 # Carregamento do modelo
 try:
@@ -34,6 +39,10 @@ if args.offline:
 # Loop de conversa
 while True:
     user_input = input("Pê diz: ")
+
+    if not entrada_valida(user_input):
+        print("Sol diz: Pê... tu não disse nada. Bora conversar sério. 😅")
+        continue
     
     if user_input.strip().lower() == "/sair":
         print("[Sol] Tá bom... Mas volta logo, tá? 🌙💛")
