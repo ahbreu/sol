@@ -1,5 +1,3 @@
-def processar_input(mensagem):
-    mensagem = mensagem.strip()
-    if not mensagem:
-        return "Ei, me diz alguma coisa primeiro! 😅"
-    return mensagem
+def processar_input(user_input):
+    """Formata a entrada do usuário para um prompt de diálogo."""
+    return f"[Pê]: {user_input}\n[Sol]:"

@@ -23,9 +23,7 @@ if not arquivo_log.exists():
     with open(arquivo_log, "w", encoding="utf-8") as f:
         f.write(f"# 🧠 Conversa com Sol – {datetime.now().strftime('%d/%m/%Y às %H:%M')}\n\n")
 
-def salvar_conversa(pedro_diz, sol_responde):
-    """Salva uma linha de conversa formatada no log atual"""
-    timestamp = datetime.now().strftime("%H:%M:%S")
-    with open(arquivo_log, "a", encoding="utf-8") as f:
-        f.write(f"**[{timestamp}] Pê:** {pedro_diz}\n")
-        f.write(f"**[{timestamp}] Sol:** {sol_responde}\n\n")
+def salvar_conversa(user_input, resposta, emocao="🤖"):
+    with open("logs/conversa-log.txt", "a", encoding="utf-8") as log:
+        log.write(f"[Pê]: {user_input}\n")
+        log.write(f"[Sol] ({emocao}): {resposta}\n\n")
