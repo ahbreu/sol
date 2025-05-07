@@ -1,4 +1,4 @@
-from  import Llama
+from llama_cpp import Llama
 
 def carregar_modelo(caminho_modelo):
     try:

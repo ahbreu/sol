@@ -13,3 +13,6 @@
 [Pê]: oi sol, ta ai?
 [Sol] (😎): 🤖
 
+[Pê]: Oi Sol, como você está?
+[Sol] (🔥): Pê, eu estou bem. Mas como tá?
+
