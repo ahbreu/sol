@@ -8,7 +8,7 @@ import random
 from core.config_loader import carregar_config
 from core.carregar_modelo import carregar_modelo
 from core.processar_input import processar_input
-from core.gerar_resposta import gerar_resposta_modelo
+from core.gerar_resposta import gerar_resposta
 from core.logger import salvar_conversa
 from core.gerar_prompt import montar_prompt
 from core.validador import entrada_valida
@@ -77,7 +77,7 @@ while True:
     animacao.start()
 
     try:
-        resposta = gerar_resposta_modelo(modelo, prompt)
+        resposta = gerar_resposta(modelo, prompt)
     except Exception as e:
         parar_animacao = True
         animacao.join()
